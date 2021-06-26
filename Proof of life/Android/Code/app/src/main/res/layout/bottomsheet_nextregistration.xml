@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView_sucess_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/fingerprint_registration_sucess">
+    </ImageView>
+
+    <ProgressBar
+        android:id="@+id/progressbar_sucessProgress_id"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView_sucess_id"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:progress="0"
+        android:progressDrawable="@drawable/bottomsheet_sucess_registation_prog_bar">
+    </ProgressBar>
+
+    <believe.cht.fadeintextview.TextView
+        android:id="@+id/texView_sucessCount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressbar_sucessProgress_id"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#1D3B3E"
+        android:textSize="15dp"
+        android:textStyle="bold">
+    </believe.cht.fadeintextview.TextView>
+
+    <believe.cht.fadeintextview.TextView
+        android:id="@+id/textView_instrction_details_1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/texView_sucessCount_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="1) Remove Finger From Scanner"
+        android:textColor="#7B8088"
+        android:textSize="15dp"
+        android:textStyle="bold">
+    </believe.cht.fadeintextview.TextView>
+
+    <believe.cht.fadeintextview.TextView
+        android:id="@+id/textView_instrction_details_2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_instrction_details_1_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:text="2) Place the Finger on the Scanner again before the TimeOut"
+        android:textAlignment="viewStart"
+        android:textColor="#7B8088"
+        android:textSize="15dp"
+        android:textStyle="bold">
+    </believe.cht.fadeintextview.TextView>
+    <believe.cht.fadeintextview.TextView
+        android:id="@+id/textView_timer_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_instrction_details_2_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="05"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold">
+    </believe.cht.fadeintextview.TextView>
+</RelativeLayout>

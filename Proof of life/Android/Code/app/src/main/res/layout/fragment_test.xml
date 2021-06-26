@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        android:background="@color/purple_700"
+        app:contentInsetStart="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView_toolbar_cancel_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cancel_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp">
+            </ImageView>
+            <TextView
+                android:id="@+id/toolbar_textViewheader_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Registration"
+                android:textSize="20dp">
+            </TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <include layout="@layout/test_scanfingerprintdata" />
+    <include layout="@layout/bottomsheet_registration" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

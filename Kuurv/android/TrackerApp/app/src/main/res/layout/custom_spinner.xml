@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:background="@color/colorTransparent"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+    <RelativeLayout
+            android:id="@+id/raw_add_device_rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border_spinner">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/raw_add_device_iv_device"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@drawable/kuraav"
+                app:civ_circle_background_color="@color/colorWhite"
+                app:civ_border_color="@color/colorRed"
+                app:civ_border_width="2dp" />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/raw_add_device_rl_right_part"
+                android:layout_toRightOf="@+id/raw_add_device_iv_device">
+            <TextView
+                    android:id="@+id/raw_add_device_item_tv_device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_1sdp"
+                    android:text="sdfdsfs"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+            <TextView
+                    android:id="@+id/raw_add_device_item_tv_last_seen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:visibility="gone"
+                    android:paddingRight="@dimen/_1sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/raw_add_device_rl_right_part"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+
+            <LinearLayout
+                    android:id="@+id/raw_add_device_rl_battery"
+                    android:layout_width="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/raw_add_device_item_tv_battery_percentage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="100"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10sdp" />
+
+                <ImageView
+                        android:id="@+id/raw_add_device_item_iv_battery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_car_battery" />
+            </LinearLayout>
+
+
+            <ImageView
+                    android:id="@+id/raw_add_device_item_iv_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_dropdown" />
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/menu_dashboard"
+                android:icon="@drawable/ic_home"
+                android:title="@string/activity_main_menu_dashboard" />
+
+        <item
+                android:id="@+id/menu_accountsetting"
+                android:icon="@drawable/ic_accountsettings"
+                android:title="@string/activity_main_menu_Setting"/>
+        <item
+                android:id="@+id/menu_buy_now"
+                android:icon="@drawable/ic_buynow"
+                android:title="@string/activity_main_menu_buy_now"/>
+
+       <!-- <item
+                android:id="@+id/menu_lost_device"
+                android:icon="@drawable/ic_lostdevice"
+                android:title="@string/activity_main_menu_lost_device"/>-->
+       <!-- <item
+                android:id="@+id/menu_notification"
+                android:icon="@drawable/ic_notifications"
+                android:title="@string/activity_main_menu_notification"/>-->
+        <item
+                android:id="@+id/menu_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/activity_main_menu_help"/>
+
+
+        <item
+                android:id="@+id/menu_about_us"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/activity_main_menu_about_us"/>
+
+
+        <item
+                android:id="@+id/menu_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/activity_main_menu_logout"/>
+    </group>
+
+</menu>

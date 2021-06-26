@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:id="@+id/frg_shared_info_ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp">
+
+            <TextView
+                    android:id="@+id/frg_shared_info_et_tv_lbl_owner_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="left"
+                    android:padding="@dimen/_2sdp"
+                    android:text="USER INFO"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/_16sdp" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/frg_shared_info_til_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_shared_info_et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLength="18"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp"
+
+                        android:hint="Name"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+
+                        />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/frg_shared_info_til_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_shared_info_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLength="36"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp"
+
+                        android:hint="Email"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+
+                        />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/frg_shared_info_til_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_shared_info_et_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp"
+
+                        android:hint="Mobile Number(optional)"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+                        />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                    android:id="@+id/frg_shared_info_btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@drawable/rounded_corner_button"
+                    android:text="Finish"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

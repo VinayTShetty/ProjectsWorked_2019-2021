@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+        <LinearLayout
+                android:id="@+id/frg_add_device_rl_scanning"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+            <RelativeLayout
+                    android:id="@+id/imagebackgorund_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+            >
+                <!--
+                                <ImageButton
+                                        android:id="@+id/frg_add_device_iv_scan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:background="@drawable/circle_shape"
+                                        android:textColor="#fff"/>-->
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/frg_add_device_iv_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/circle_shape"
+                        android:visibility="visible"
+                        app:civ_border_color="@color/colorBlack"
+                        app:civ_border_width="1dp" />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_centerInParent="true"
+                          android:text=" Choose \n\t\tImage"
+                          android:id="@+id/change_image_text"
+                          android:textSize="@dimen/_15sdp"/>
+
+            </RelativeLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/fragment_device_aliasname"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_config_device_et_device_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLines="1"
+
+                        android:textColor="@color/colorBlack"
+                        android:hint="Device Name"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+
+
+                        />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="3"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:layout_marginRight="@dimen/_10sdp"
+                          android:layout_marginTop="@dimen/_15sdp"
+                          android:visibility="gone"
+                          android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/frg_config_device_btn_key"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_black"
+                        android:text="Key"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/frg_config_device_btn_wallet"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@drawable/rounded_border_black"
+                        android:text="Wallet"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/frg_config_device_btn_laptops"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_black"
+                        android:text="Laptops"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="3"
+                          android:layout_marginLeft="@dimen/_10sdp"
+                          android:layout_marginRight="@dimen/_10sdp"
+                          android:layout_marginTop="@dimen/_5sdp"
+                          android:visibility="gone"
+                          android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/frg_config_device_btn_suitcase"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_black"
+                        android:text="Suitcase"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/frg_config_device_btn_satchel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_black"
+                        android:text="Satchel"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/frg_config_device_btn_others"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_border_black"
+                        android:text="Others"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/frg_config_device_et_tv_lbl_owner_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="left"
+                    android:text="USER INFO"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/_12sdp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:id="@+id/frg_config_device_et_name_l"
+                    android:layout_marginRight="@dimen/_10sdp"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_config_device_et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLines="1"
+                        android:maxLength="18"
+
+                        android:textColor="@color/colorBlack"
+                        android:hint="Name"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+
+                        android:textSize="@dimen/_14sdp"
+
+                        />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/frg_config_device_et_email_l"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_config_device_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:maxLength="36"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_14sdp"
+
+                        android:textColor="@color/colorBlack"
+                        android:hint="Email"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+                        />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/frg_config_device_et_mobile_no_l"
+
+                    android:textColorHint="#12e6cf"
+                    app:errorEnabled="true"
+                    app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout"
+
+
+                    >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/frg_config_device_et_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number|textNoSuggestions"
+                        android:maxLines="1"
+                        android:textColor="@color/colorBlack"
+                        android:hint="Mobile Number(Optional)"
+                        android:textColorHint="@color/colorAppTheme"
+                        android:theme="@style/MyEditTextAccountSettig"
+
+                        android:textSize="@dimen/_14sdp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                    android:id="@+id/frg_config_device_btn_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/rounded_corner_button"
+                    android:text="Finish"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"/>
+
+
+            <!--  <Button
+                      android:id="@+id/frg_config_device_btn_gettable"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_marginLeft="@dimen/_10sdp"
+                      android:layout_marginTop="@dimen/_25sdp"
+                      android:layout_marginRight="@dimen/_10sdp"
+                      android:background="@drawable/rounded_corner_button"
+                      android:text="gettable"
+                      android:textColor="@color/colorWhite"
+                      android:textSize="@dimen/_14sdp"/>-->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

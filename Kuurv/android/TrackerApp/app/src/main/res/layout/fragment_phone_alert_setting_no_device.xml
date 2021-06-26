@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frg_phone_alert_setting_cl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/frg_phone_alert_ll_silent_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                <TextView
+                        android:id="@+id/frg_phone_alert_tv_silent_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/frg_phone_alert_sw_silent_mode"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Silent Mode"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp" />
+
+                <Switch
+                        android:id="@+id/frg_phone_alert_sw_silent_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="visible"
+                        app:theme="@style/SwitchCompattButton"
+                        />
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/frg_phone_alert_tv_lbl_silent_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_phone_alert_tv_silent_mode"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Disable the alerts."
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/frg_phone_alert_ll_buzzer_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                <TextView
+                        android:id="@+id/frg_phone_alert_tv_buzzer_volume"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/frg_phone_alert_rg_buzzer_volume"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Buzzer Volume"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                        android:id="@+id/frg_phone_alert_rg_buzzer_volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp">
+
+                    <RadioButton
+                            android:id="@+id/frg_phone_alert_rb_volume_high"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="High"
+                            android:textSize="@dimen/_14sdp" />
+
+                    <RadioButton
+                            android:id="@+id/frg_phone_alert_rb_volume_low"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Low"
+                            android:textSize="@dimen/_14sdp" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/frg_phone_alert_tv_lbl_buzzer_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_phone_alert_tv_silent_mode"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Set device volume"
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/frg_phone_alert_ll_separated_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                <TextView
+                        android:id="@+id/frg_phone_alert_tv_separated_alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/frg_phone_alert_sw_separated_alert"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Separated Alert"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp" />
+
+                <Switch
+                        android:id="@+id/frg_phone_alert_sw_separated_alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:theme="@style/SwitchCompattButton"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/frg_phone_alert_tv_lbl_separated_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_phone_alert_tv_silent_mode"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="Receive a phone notification if tracker is separated  and out of your range."
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/frg_phone_alert_ll_repeat_alert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                <TextView
+                        android:id="@+id/frg_phone_alert_tv_repeat_alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/frg_phone_alert_sw_repeat_alert"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Repeat Alert"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp" />
+
+                <Switch
+                        android:id="@+id/frg_phone_alert_sw_repeat_alert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:theme="@style/SwitchCompattButton"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:visibility="visible" />
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/frg_phone_alert_tv_lbl_repeat_alert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frg_phone_alert_tv_silent_mode"
+                    android:ellipsize="end"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:text="When locating your tracker, it will ring repeatedly until you stop it."
+                    android:textColor="@color/colorBlackLight"
+                    android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView_id_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/DIALOG_FRAGMENT_TOPIC_HEADER_OWNWER"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="25dp">
+    </TextView>
+    <TextView
+        android:id="@+id/textView_id_subtopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/DIALOG_FRAGMENT_TOPIC_HEADER_OWNWER"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView_id_topic">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_id_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DIALOG_FRAGMENT_BUTTON_OK"
+        android:textStyle="bold|italic"
+        android:textAllCaps="false"
+        android:layout_below="@+id/textView_id_subtopic"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70dp"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_id_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DIALOG_FRAGMENT_BUTTON_CANCEL"
+        android:textStyle="bold|italic"
+        android:textAllCaps="false"
+        android:layout_alignTop="@+id/button_id_ok"
+        android:layout_marginLeft="70dp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

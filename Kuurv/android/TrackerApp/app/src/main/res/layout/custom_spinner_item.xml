@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+    <RelativeLayout
+            android:id="@+id/raw_add_device_rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:background="@drawable/rounded_border_spinner_item">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/raw_add_device_iv_device"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@drawable/kuraav"
+                app:civ_circle_background_color="@color/colorWhite"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="2dp" />
+
+        <!--        <ImageView-->
+        <!--                android:id="@+id/raw_add_device_iv_device"-->
+        <!--                android:layout_width="@dimen/_40sdp"-->
+        <!--                android:layout_height="@dimen/_40sdp"-->
+        <!--                android:layout_alignParentLeft="true"-->
+        <!--                android:layout_centerVertical="true"-->
+        <!--                android:paddingLeft="@dimen/_8sdp"-->
+        <!--                android:paddingTop="@dimen/_5sdp"-->
+        <!--                android:paddingRight="@dimen/_5sdp"-->
+        <!--                android:paddingBottom="@dimen/_5sdp"-->
+        <!--                android:src="@drawable/ic_alert_warning"-->
+        <!--                android:tint="@color/colorBlack" />-->
+
+        <TextView
+                android:id="@+id/raw_add_device_item_tv_device_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/raw_add_device_iv_device"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:padding="@dimen/_5sdp"
+                android:text="Device 1"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+</RelativeLayout>

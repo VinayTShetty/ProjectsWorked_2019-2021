@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">ProofOfLife</string>
+
+    <!--Splash Screen-->
+    <string name="splash_screen_app_name">Proof Of Life</string>
+    <string name="splash_screen_company_desrription">Powered By Human Capital Managers</string>
+    <string name="splash_screen_version_number">Version 1.0.2</string>
+
+    <!--Login Screen-->
+    <string name="Login_screen_app_name">Proof Of Life</string>
+    <string name="Login_screen_login_text">Login </string>
+    <string name="Login_screen_user_name_hint">User Name</string>
+    <string name="Login_screen_password_hint">Password</string>
+    <string name="Login_screen_button_text">Login</string>
+    <string name="Login_screen_register_here">Register Here</string>
+    <string name="Login_screen_Forgot_Password">Forgot Password</string>
+
+    <!--DeviceRegistration Screen-->
+    <string name="Registration_screen_header">HCM Registration Associate</string>
+    <string name="Registration_screen_registerr">Register</string>
+    <string name="Registration_screen_FristName">First Name</string>
+    <string name="Registration_screen_LastName">Last Name</string>
+    <string name="Registration_screen_mobile">Mobile NUmber</string>
+    <string name="Registration_screen_PassWord">Password</string>
+    <string name="Registration_screen_ConFermPassWord">Conferm Password</string>
+    <string name="Registration_screen_Phone_Number">Phone Number</string>
+
+    <!--Bluetooth Le Service -->
+    <!--New Clean Code BLE Service Code Combining.-->
+    <!--Passing Connection Status of the Device-->
+    <string name="BLUETOOTHLE_SERVICE_CONNECTION_STATUS">BLE_ADDRESS_CONNECTION_STAUS</string>
+    <string name="BLUETOOTHLE_SERVICE_CONNECTION_STATUS_CONNECTED_DISCONNECTED">CONNECTED_DISCONNECTED</string>
+    <string name="BLUETOOTHLE_SERVICE_CONNECTION_STATUS_BLE_ADDRESS">BLE_ADDRESS</string>
+    <!--    send_Confermation_WhatDataWriteen_InFirmware-->
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION">ACTION_DATA_WRITTEN_IN_FIRMWARE</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_BLE_ADDRESS">ACTION_DATA_WRITTEN_IN_FIRMWARE_BLE_ADDRESS</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_BLE_DATA_WRITTEN">ACTION_DATA_WRITTEN_IN_FIRMWARE_DATA_WRITTEN</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_BLE_DATA_WRITTEN_TYPE">ACTION_DATA_WRITTEN_IN_FIRMWARE_DATA_WRITTEN_TYPE</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_WRITTEN_FOR_CONFERMATION_STATUS">ACTION_DATA_WRITTEN_IN_FIRMWARE_DATA_WRITTEN_STATUS</string>
+    <!--send data obtained from firmware to application.-->
+    <string name="BLUETOOTHLE_SERVICE_DATA_OBTAINED">ACTION_DATA_OBTAINED</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_OBTAINED_BLE_ADDRESS">ACTION_DATA_OBTAINED_BLE_ADDRESS</string>
+    <string name="BLUETOOTHLE_SERVICE_DATA_OBTAINED_DATA_RECIEVED">ACTION_DATA_OBTAINED_DATA</string>
+    <!--notification enable-->
+    <string name="BLUETOOTHLE_SERVICE_NOTIFICATION_ENABLE">ENABLE_NOTIFICATION</string>
+    <string name="BLUETOOTHLE_SERVICE_NOTIFICATION_ENABLE_DATA">ENABLE_NOTIFICATION_TRUE_FALSE</string>
+    <string name="BLUETOOTHLE_SERVICE_NOTIFICATION_ENABLE_BLE_AADRESS">ENABLE_NOTIFICATION_BLE_ADDRESS</string>
+
+    <!--FragmentScan-->
+    <string name="FRAGMET_SCAN_DEVICE_ALIAS_NAME">Proof of Life</string>
+    <string name="FRAGMET_SCAN_DEVICE_BLE_ADDRESS">31:A8:52:C8:02:19</string>
+    <string name="FRAGMET_SCAN_DEVICE_CONNECT">Connect</string>
+    <string name="FRAGMET_SCAN_DEVICE_DIS_CONNECT">Disconnect</string>
+    <string name="FRAGMET_SCAN_HEADER">Proof of Life</string>
+    <!--Owner Fragment-->
+    <string name="FRAGMET_OWNER_DELETE_DEVICE_BUTTON">Delete Device</string>
+    <string name="FRAGMET_OWNER_OTP_GENERATION_BUTTON">09234564</string>
+    <string name="FRAGMET_OWNER_TIME_SETTING">Set time</string>
+    <string name="FRAGMET_OWNER_GENERATE_OTP">Generate OTP</string>
+    <!--DeviceRegistration Background Fragment-->
+
+    <string name="FRAGMET_REGISTRATION_REGISTRATION_DETAILS">Instruction Steps</string>
+    <string name="FRAGMET_REGISTRATION_START_REGISTRATION">Start Registration</string>
+    <string name="FRAGMET_REGISTRATION_PLACE_FINGER_PRINT">Place Finger Print on the Electronic Scannner.\nPress start Registration Button</string>
+    <string name="FRAGMET_REGISTRATION_PLACE_SCAN_IN_PROGRESS">Scan in Progress</string>
+    <string name="FRAGMET_REGISTRATION_PLACE_SCAN_FINISHED">Scan Finished</string>
+    <string name="FRAGMET_REGISTRATION_PLACE_SCAN_FAILED">Scan Failed</string>
+    <string name="FRAGMET_REGISTRATION_PLACE_SCAN_COMPLETED">Scan Completed</string>
+    <string name="FRAGMET_REGISTRATION_PLACE_RESET_SCAN">Reset scan</string>
+    <string name="FRAGMET_REGISTRATION__CHANGE_POSITION">Change Position and Place Finger again.</string>
+    <string name="FRAGMET_REGISTRATION__REGISTRATION_STARTED">Registration Started</string>
+    <string name="FRAGMET_REGISTRATION_NO_FINGER_PRINT">Finger Print Not Found\nPlace Finger Print in Firmware and Start Registration  </string>
+
+    <!--Dialog Fragment-->
+    <string name="DIALOG_FRAGMENT_TOPIC_HEADER_OWNWER">Ur the Owner of the Device</string>
+    <string name="DIALOG_FRAGMENT_SUB_TOPIC_HEADER_OWNWER">Change Setting</string>
+
+    <string name="DIALOG_FRAGMENT_TOPIC_HEADER_FRESH_DEVICE">Register Device</string>
+    <string name="DIALOG_FRAGMENT_SUB_TOPIC_HEADER_FRESH_DEVICE">Do you want to register ?</string>
+
+    <string name="DIALOG_FRAGMENT_TOPIC_HEADER_BELONGS_TO_SOMEONE">Acess Restricted !</string>
+    <string name="DIALOG_FRAGMENT_SUB_TOPIC_HEADER_BELONGS_TO_SOMEONE">Failed</string>
+    <string name="DIALOG_FRAGMENT_BUTTON_OK">OK</string>
+    <string name="DIALOG_FRAGMENT_BUTTON_CANCEL">Cancel</string>
+
+
+    <string name="DIALOG_FRAGMENT_TOPIC_HEADER_DELETE_DEVICE">Delete Device</string>
+    <string name="DIALOG_FRAGMENT_SUB_TOPIC_HEADER_SURE_DELTE_DEVICE">Are you sure you want to Delete Device ?</string>
+
+
+    <string name="DIALOG_FRAGMENT_TOPIC_HEADER_START_REGSITRATION">Device Registration</string>
+    <string name="DIALOG_FRAGMENT_SUB_TOPIC_HEADER_START_REGSITRATION">Place the Finger Print on the Scanner \n Press OK for starting Registration</string>
+
+
+    <!--Main Activity-->
+    <string name="SCAN_STARTED">SCAN_STARTED</string>
+    <string name="SCAN_STOPED">SCAN_STOPED</string>
+    <!--Common String Name-->
+    <string name="FIRMWARE_DEVICE_NAME">ProofofLife</string>
+    <string name="BLUETOOTH_OFF">Turn on Bluetooth</string>
+    <string name="LOCATION_OFF">Enable Location Permission</string>
+    <string name="CUSTOM_BLE_ADDRESS">Ble Address</string>
+    <!--Progress Dialog-->
+    <string name="PROGRESS_DIALOG_TITLE">Connecting</string>
+    <!--Menu String-->
+    <string name="MENU_HOME">Nearby Tokens</string>
+    <string name="MENU_ACCOUNT">Registered</string>
+
+    <!--Fragment Registration-->
+    <!-- Fragment Registration  Alert Dialog -->
+        <!--Finger Not Placed-->
+            <string name="FINGER_NOT_PLACED_TOPIC">Finger Print Scan Failed</string>
+            <string name="FINGER_NOT_PLACED_SUB_TOPIC">Please Place the Finger Try again</string>
+        <!--Finger Print Wrong-->
+            <string name="FINGER_PRINT_WRONG_TOPIC">Finger Print Scan Failed</string>
+            <string name="FINGER_PRINT_WRONG_SUBTOPIC">Finger Print Error ! \n Try again</string>
+        <!--Instruction Window-->
+            <string name="INSTRUCTION_TOPIC">Registration Procedure</string>
+            <string name="INSTRUCTION_SUB_TOPIC">1)Place the Finger on the scanner\n2)Press OK Registration</string>
+        <!--Instruction Window-->
+            <string name="NEXT_FINGER_PRINT_TOPIC">Sucess(</string>
+            <string name="NEXT_FINGER_PRINT_SUB_TOPIC">Lift Finger &amp; Try again </string>
+    <!--Fragment Owner-->
+    <string name="FRAGMENT_OWNER_SET_TIME">Set time</string>
+    <string name="FRAGMENT_OWNER_DELETE_DEVICE">Delete</string>
+    <string name="FRAGMENT_OWNER_SETTING_DEVICE">Settings</string>
+    <string name="FRAGMENT_GENERATE_OTP">Custom OTP</string>
+        <!--Fragment Owner Alert Dialog-->
+            <!--set time-->
+            <string name="FRAGMENT_OWNER_SET_TIME_TOPIC">Time SetUp</string>
+            <string name="FRAGMENT_OWNER_SET_TIME_SUB_TOPIC">Are you sure want to set time..?</string>
+            <!--Otp time-->
+            <string name="FRAGMENT_OWNER_SET_OTP_TOPIC">Generate OTP</string>
+            <string name="FRAGMENT_OWNER_SET_OTP_SUB_TOPIC">Generate OTP to Verify..?</string>
+            <!--Delete Device-->
+            <string name="FRAGMENT_OWNER_DELETE_TOPIC">Delete Device</string>
+            <string name="FRAGMENT_OWNER_DELETE_SUB_TOPIC">Are you sure ?</string>
+
+    <!--back dialog String-->
+    <string name="str_exit_confirmation">Are you sure want to exit?</string>
+
+    <!--Bottom Sheet Fragment-->
+    <string name="instruction_details">Instructions\n1) Lift the Finger From the scanner &amp; Place again\n2) Press OK after placing the finger.
+    </string>
+
+</resources>

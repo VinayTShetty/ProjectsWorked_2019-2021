@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scan_backgroud_gradient">
+            <ImageView
+                android:id="@+id/finger_print_image_id"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_finger_print_scan_item">
+            </ImageView>
+            <TextView
+                android:id="@+id/deviceName_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textColor="@color/scan_item_textcolor"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:text="@string/FIRMWARE_DEVICE_NAME"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/finger_print_image_id">
+            </TextView>
+            <TextView
+                android:id="@+id/device_bleAddress_textView_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/FRAGMET_SCAN_DEVICE_BLE_ADDRESS"
+                android:layout_below="@+id/deviceName_textView_id"
+                android:layout_toRightOf="@+id/finger_print_image_id"
+                android:textColor="@color/scan_item_textcolor"
+                android:layout_alignStart="@+id/deviceName_textView_id"
+                android:textStyle="bold"
+                android:textSize="10dp">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/connect_disconnect_button_id"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/FRAGMET_SCAN_DEVICE_CONNECT"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            </androidx.appcompat.widget.AppCompatButton>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

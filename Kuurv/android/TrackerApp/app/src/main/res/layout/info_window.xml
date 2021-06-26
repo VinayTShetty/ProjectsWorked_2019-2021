@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:id="@+id/popup_add_device_info_window"
+        android:layout_marginRight="@dimen/_15sdp"
+        >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                    android:id="@+id/raw_installation_photo_item_cardview_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="@string/app_name"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"/>
+
+                    <TextView
+                            android:id="@+id/tv_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title"
+
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:maxLines="3"
+                            android:layout_marginLeft="@dimen/_8sdp"
+                            android:padding="@dimen/_20sdp"
+                            android:text="This Tracker device belongs to someone else. Tap on Info to get Owner details"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_12sdp"/>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_message"
+                            android:orientation="horizontal">
+                        <TextView
+                                android:id="@+id/tv_ok"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Info"
+                                android:textColor="@color/colorAppTheme"
+                                android:textSize="@dimen/_12sdp"/>
+
+                        <TextView
+                                android:id="@+id/tv_cancel"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_weight="1"
+                                android:background="@color/dialogSuccessBackgroundColor"
+                                android:gravity="center"
+                                android:padding="@dimen/_8sdp"
+                                android:text="Cancel"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:visibility="visible"
+                                />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialog_contact_iv_close"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/ic_failer"
+                app:civ_border_color="@color/colorBlack"
+                app:civ_circle_background_color="@color/colorWhite"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

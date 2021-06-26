@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/popup_add_device_rl_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@color/colorSemiTransparent">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackground"
+            android:elevation="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/_10sdp"
+                    android:text="KUURV"
+                    android:textColor="@color/colorAppTheme"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_14sdp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:text="This device is belongs to someone whose details are as follows"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:text="Owner Details:"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <TextView
+                        android:id="@+id/popup_add_device_tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:text="Name: Steav Johan"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <TextView
+                        android:id="@+id/popup_add_device_tv_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:text="Email: johan@gmail.com"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+                <TextView
+                        android:id="@+id/popup_add_device_tv_mobile_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:text="Phone: +917575811555"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_14sdp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                <Button
+                        android:id="@+id/popup_add_device_btn_mail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:background="@color/colorAppTheme"
+                        android:text="Contact"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"/>
+              <!--  <Button
+                        android:id="@+id/popup_add_device_btn_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:background="@color/colorTransparentBG"
+                        android:text="Number"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"/>-->
+
+                <Button
+                        android:id="@+id/popup_add_device_btn_ignore"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:background="@color/dialogErrorBackgroundColor"
+                        android:text="Ignore"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

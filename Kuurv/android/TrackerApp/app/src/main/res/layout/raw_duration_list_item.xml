@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/raw_duration_rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+        <TextView
+                android:id="@+id/raw_duration_tv_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/raw_duration_rb_duration"
+                android:gravity="left"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_12sdp" />
+
+        <RadioButton
+                android:id="@+id/raw_duration_rb_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:padding="@dimen/_5sdp"
+                android:clickable="false"
+                android:focusable="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

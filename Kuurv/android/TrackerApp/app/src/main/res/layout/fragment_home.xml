@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/frg_dashboard_rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"
+            tools:context=".MapsActivity" />
+    <RelativeLayout
+            android:id="@+id/fragment_home_device"
+            android:layout_width="@dimen/_250sdp"
+            android:visibility="gone"
+            android:layout_height="@dimen/_70sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+        <RelativeLayout
+                android:id="@+id/raw_add_device_rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/rounded_border_spinner">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/raw_add_device_iv_device"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="6dp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:src="@drawable/ic_default_logo"
+                    app:civ_border_color="@color/colorRed"
+                    app:civ_border_width="2dp"
+                    app:civ_circle_background_color="@color/colorWhite" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/raw_add_device_rl_right_part"
+                    android:layout_toRightOf="@+id/raw_add_device_iv_device">
+
+                <TextView
+                        android:id="@+id/raw_add_device_item_tv_device_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_1sdp"
+                        android:textStyle="bold"
+                        android:text="Device Name"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/raw_add_device_rl_right_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true">
+
+                <LinearLayout
+                        android:id="@+id/raw_add_device_rl_battery"
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/raw_add_device_item_tv_battery_percentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:text="100%"
+
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    <ImageView
+                            android:id="@+id/raw_add_device_item_iv_battery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:paddingLeft="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_10sdp"
+                            app:srcCompat="@drawable/ic_car_battery" />
+                </LinearLayout>
+
+
+
+                <ImageView
+                        android:id="@+id/raw_add_device_item_iv_right_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_12sdp"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_dropdown" />
+
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/raw_add_device_item_tv_last_seen"
+                    android:layout_width="368dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-120dp"
+                    android:layout_marginBottom="-2dp"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/frg_home_iv_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_toStartOf="@+id/raw_add_device_rl_main"
+            app:srcCompat="@drawable/ic_navigation_black_24dp"
+            tools:ignore="NotSibling"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:adjustViewBounds="true"
+            android:id="@+id/deviicelist_recycleview"
+            android:layout_marginTop="@dimen/_85sdp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/frg_home_btn_add_device1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_minus2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_minus3sdp"
+            android:cropToPadding="true"
+            android:outlineAmbientShadowColor="@color/colorSemiTransparent"
+            android:scaleType="center"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorSemiTransparent"
+            app:elevation="@dimen/_5sdp"
+            app:fabSize="normal"
+            app:layout_anchorGravity="bottom|right|end"
+            app:useCompatPadding="true"
+            tools:ignore="RtlHardcoded" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/frg_home_btn_add_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:cropToPadding="true"
+            android:elevation="@dimen/_10sdp"
+            android:outlineAmbientShadowColor="@color/colorBlack"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_device"
+            android:visibility="visible"
+            app:backgroundTint="@color/colorAppTheme"
+            app:elevation="@dimen/_5sdp"
+            app:fabSize="normal"
+            app:layout_anchorGravity="bottom|right|end"
+            app:useCompatPadding="true"
+            tools:ignore="RtlHardcoded" />
+
+    <com.libRG.CustomTextView
+            android:id="@+id/frg_home_tv_locate1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:elevation="@dimen/_7sdp"
+            android:textColor="@color/colorWhite"
+            app:lib_setRadius="@dimen/_8sdp"
+            app:lib_setRoundedBGColor="@color/colorSemiTransparent"
+            app:lib_setRoundedBorderColor="@color/colorBlack"
+            app:lib_setRoundedView="true"
+            app:lib_setShape="oval"
+            app:lib_setStrokeWidth="0dp" />
+
+    <com.libRG.CustomTextView
+            android:id="@+id/frg_home_tv_locate"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Locate"
+            android:textColor="@color/colorWhite"
+            android:translationZ="@dimen/_10sdp"
+            android:visibility="visible"
+            app:lib_setRadius="@dimen/_8sdp"
+            app:lib_setRoundedBGColor="@color/colorAppTheme"
+            app:lib_setRoundedBorderColor="@color/colorBlack"
+            app:lib_setRoundedView="true"
+            app:lib_setShape="oval"
+            app:lib_setStrokeWidth="0dp" />
+</RelativeLayout>
+
+
+        <!--Here Remove the spinner from the Design when its completed.-->
